@@ -1,10 +1,10 @@
 {
-    "name": "brackets-lorem-ipsum",
-    "title": "Lorem Ipsum",
-    "version": "1.0.3",
-    "description": "Generates Lorem Ipsum text automatically in any Brackets document.",
-    "homepage": "https://github.com/lkcampbell/brackets-lorem-ipsum",
-    "author": "Lance Campbell (https://github.com/lkcampbell)",
+    "name": "brackets-bacon-ipsum",
+    "title": "Bacon Ipsum",
+    "version": "1.0.0",
+    "description": "Generates Bacon Ipsum text automatically in any Brackets document.",
+    "homepage": "https://github.com/johncipponeri/brackets-bacon-ipsum",
+    "author": "John Cipponeri (https://github.com/johncipponeri)",
     "license": "MIT",
     "categories":"snippets",
     "keywords": [
