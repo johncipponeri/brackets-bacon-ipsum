@@ -54,40 +54,32 @@ define(function (require, exports, module) {
     var _allSizes = [ SIZE_SHORT, SIZE_MEDIUM, SIZE_LONG, SIZE_VERY_LONG ];
     
     var _shortWords     = [ // Words with less than four letters
-        "a", "ab", "ad", "an", "aut", "de", "do", "e", "ea", "est",
-        "et", "eu", "ex", "hic", "id", "iis", "in", "ita", "nam", "ne",
-        "non", "o", "qui", "quo", "se", "sed", "si", "te", "ubi", "ut"
+        "cow", "ham", "ham", "pig", "tip"
     ];
     
     var _mediumWords    = [ // Words with four to six letters
-        "amet", "aliqua", "anim", "aute", "cillum", "culpa", "dolor",
-        "dolore", "duis", "elit", "enim", "eram", "esse", "fore",
-        "fugiat", "illum", "ipsum", "irure", "labore", "legam",
-        "lorem", "magna", "malis", "minim", "multos", "nisi",
-        "noster", "nulla", "quae", "quem", "quid", "quis", "quorum",
-        "sint", "summis", "sunt", "tamen", "varias", "velit", "veniam"
+        "ball", "beef", "beef", "beef", "chop", "hock", "jowl",
+        "loin", "loin", "pork", "pork", "pork", "pork",
+        "ribs", "ribs", "ribs", "ribs", "rump", "tail",
+        "bacon", "belly", "chuck", "doner", "filet", "flank",
+        "jerky", "kevin", "round", "shank", "short", "short",
+        "spare", "steak", "strip", "swine", "boudin", "corned",
+        "ground", "mignon", "ribeye", "salami", "t-bone", "tongue",
+        "turkey"
     ];
     
     var _longWords      = [ // Words with seven to ten letters
-        "admodum", "aliquip", "appellat", "arbitror", "cernantur",
-        "commodo", "consequat", "cupidatat", "deserunt", "doctrina",
-        "eiusmod", "excepteur", "expetendis", "fabulas", "incididunt",
-        "incurreret", "ingeniis", "iudicem", "laboris", "laborum",
-        "litteris", "mandaremus", "mentitum", "nescius", "nostrud",
-        "occaecat", "officia", "offendit", "pariatur", "possumus",
-        "probant", "proident", "quamquam", "quibusdam", "senserit",
-        "singulis", "tempor", "ullamco", "vidisse", "voluptate"
+        "biltong", "brisket", "chicken", "fatback", "sausage",
+        "shankle", "sirloin", "tri-tip", "venison", "bresaola",
+        "capicola", "kielbasa", "leberkas", "meatball", "pancetta",
+        "pastrami", "shoulder", "andouille", "drumstick", "hamburger",
+        "porchetta", "turducken", "landjaeger", "prosciutto", "tenderloin"
     ];
     
     var _veryLongWords  = [ // Words with more than ten letters
-        "adipisicing", "arbitrantur", "cohaerescant", "comprehenderit",
-        "concursionibus", "coniunctione", "consectetur", "despicationes",
-        "distinguantur", "domesticarum", "efflorescere", "eruditionem",
-        "exquisitaque", "exercitation", "familiaritatem", "fidelissimae",
-        "firmissimum", "graviterque", "illustriora", "instituendarum",
-        "imitarentur", "philosophari", "praesentibus", "praetermissum",
-        "relinqueret", "reprehenderit", "sempiternum", "tractavissent",
-        "transferrem", "voluptatibus"
+        "frankfurter", "andouillette", "bierschinken", "braunschweiger",
+        "bregenwurst", "sopressata"
+
     ];
     
     var _allWords = _shortWords.concat(_mediumWords, _longWords, _veryLongWords);

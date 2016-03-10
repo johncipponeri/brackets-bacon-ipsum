@@ -33,10 +33,10 @@ define(function (require, exports, module) {
         EditorManager   = brackets.getModule("editor/EditorManager");
     
     // --- Extension modules ---
-    var LoremIpsum = require("LoremIpsum");
+    var BaconIpsum = require("BaconIpsum");
     
     // --- Helper functions ---
-    function _getLoremCommand(editor) {
+    function _getBaconCommand(editor) {
         var document    = editor.document,
             pos         = editor.getCursorPos(),
             line        = document.getLine(pos.line),
@@ -50,11 +50,11 @@ define(function (require, exports, module) {
         
         command = document.getRange({line: pos.line, ch: start}, {line: pos.line, ch: end});
         
-        if (command.match(/lorem/)) {
-            command = command.substring(command.match(/lorem/).index);
+        if (command.match(/bacon/)) {
+            command = command.substring(command.match(/bacon/).index);
         }
         
-        return ((command.split("_")[0] === "lorem") ? command : "");
+        return ((command.split("_")[0] === "bacon") ? command : "");
     }
     
     // --- Event handlers ---
@@ -66,10 +66,10 @@ define(function (require, exports, module) {
             codemirror  = null,
             i           = 0;
         
-        if ((event.type === "keydown") && (event.keyCode === KeyEvent.DOM_VK_TAB)) {
-            command = _getLoremCommand(editor);
+        if ((event.type === "keydown") && (event.keyCode === KeyEvent.DOM_VK_CONTROL)) {
+            command = _getBaconCommand(editor);
             if (command) {
-                text    = LoremIpsum.parseCommand(command);
+                text    = BaconIpsum.parseCommand(command);
                 end     = editor.getCursorPos();
                 start   = {line: end.line, ch: end.ch - command.length};
                 editor.document.replaceRange(text, start, end);
