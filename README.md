@@ -1,4 +1,7 @@
 # Bacon Ipsum Generator for Brackets
+
+Based on the [Lorem Ipsum](https://github.com/lkcampbell/brackets-lorem-ipsum) Brackets extension.
+
 An extension for [Brackets](https://github.com/adobe/brackets/) to generate
 Bacon Ipsum text automatically.
 
@@ -95,21 +98,6 @@ all other options will be ignored and no Bacon Ipsum text will be generated.
 **Note:** Any option that has a number associated with it (e.g. `_p3`, `_wrap40`)
 can also be entered with the number portion in front of the option
 (i.e. `_3p`, `_40wrap`) and it will work the same way.
-
-### Known Issues
-
-**Using with Emmet/Zen Code Extension:** If you use this extension with the
-[Emmet Brackets extension](https://github.com/emmetio/brackets-emmet) some of
-the Bacon Ipsum options may not work correctly.  This is because both
-extensions use the Control key as a shortcut key.
-
-The Control shortcut can be turned off in the Emmet extension.  Go into
-"Preferences..." in the Emmet menu and uncheck the checkbox entitled
-"Expand abbreviations with Control key". If you uncheck that setting, you
-can use both extensions together by using Control to insert Bacon Ipsum text
-and expanding Emmet abbreviations with the alternative shortcut keys:
-
-**Ctrl-Alt-Enter** on Windows and **Command-Alt-Enter** on Mac.
 
 ### License
 MIT-licensed -- see `main.js` for details.
